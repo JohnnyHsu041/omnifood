@@ -1,6 +1,9 @@
 $PRIMARY_COLOR = #e67e22
 $SHADES_COLOR = #cf711f
-$TINTS_COLORS = #fdf2e9
+$TINT_COLOR = #fdf2e9
+$TAG_VEGETARIAN_COLOR = #51cf66
+$TAG_VEGAN_COLOR = #94d82d
+$TAG_PALEO_COLOR = #ffd43b
 
 /********************************/
 /* HEADER */
@@ -10,7 +13,7 @@ $TINTS_COLORS = #fdf2e9
     display flex
     justify-content space-between
     align-items center
-    background-color $TINTS_COLORS
+    background-color $TINT_COLOR
     
     /* because to make header sticky later*/
     height 9.6rem
@@ -18,7 +21,6 @@ $TINTS_COLORS = #fdf2e9
 
 .logo
     height 2.2rem
-
 
 /********************************/
 /* NAVIGATION*/
@@ -59,7 +61,7 @@ $TINTS_COLORS = #fdf2e9
 
 .section-hero
     height 100vh
-    background-color $TINTS_COLORS
+    background-color $TINT_COLOR
     padding 4.8rem 0 9.6rem 0
 
 .hero
@@ -95,7 +97,7 @@ $TINTS_COLORS = #fdf2e9
         width 4.8rem
         border-radius 50%
         margin-right -1.8rem
-        border 3px solid $TINTS_COLORS
+        border 3px solid $TINT_COLOR
 
     img:last-child
         margin 0
@@ -108,6 +110,30 @@ $TINTS_COLORS = #fdf2e9
     span 
         color $SHADES_COLOR
         font-weight 700
+
+/********************************/
+/* FEATURED IN SECTION*/
+/********************************/
+
+.section-featured
+    padding 4.8rem 0 3.2rem 0
+
+.heading-featured-in
+    font-size 1.4rem
+    text-transform uppercase
+    letter-spacing 0.75px
+    font-weight 500
+    text-align center
+    margin-bottom: 2.4rem
+
+.logos
+    display flex
+    justify-content space-around
+
+    img
+        height 3.2rem
+        filter brightness(0)
+        opacity 50%
 
 /********************************/
 /* HOW IT WORKS SECTION*/
@@ -145,7 +171,7 @@ $TINTS_COLORS = #fdf2e9
         width 65%
         // 65% of the sudo element
         padding-bottom 65%
-        background-color $TINTS_COLORS
+        background-color $TINT_COLOR
         z-index -2
     &::after
         width 50%
@@ -156,4 +182,65 @@ $TINTS_COLORS = #fdf2e9
 .step-img
     width 40%
 
-        
+/********************************/
+/* MEALS SECTION*/
+/********************************/
+
+.section-meals
+    padding 9.6rem 0
+
+.meal
+    box-shadow 0 2.4rem 4.8rem rgba(0,0,0,0.075)
+    border-radius 11px
+    overflow hidden
+
+.meal-content
+    padding 4.8rem
+    padding-top 3.2rem
+
+.meal-tags
+    margin-bottom: 1.2rem
+    display flex
+    gap 0.4rem
+
+.tag
+    display inline-block
+    padding 0.4rem 0.8rem
+    font-size 1.2rem
+    text-transform uppercase
+    color #333
+    border-radius 100px
+    font-weight 600
+
+    &.tag__vegetarian
+        background-color $TAG_VEGETARIAN_COLOR
+    &.tag__vegan
+        background-color $TAG_VEGAN_COLOR
+    &.tag__paleo
+        background-color $TAG_PALEO_COLOR
+
+.meal-title
+    font-size 2.4rem
+    color #333
+    font-weight 600
+    margin-bottom 3.2rem
+
+.meal-attributes
+    list-style none
+    display flex
+    flex-direction column
+    gap 2rem
+
+.meal-attribute
+    font-size 1.8rem
+    display flex
+    align-items center
+    gap 1.6rem
+
+.meal-icon
+    width 2.4rem
+    height 2.4rem
+    color $PRIMARY_COLOR
+
+.meal-img
+    width 100%
