@@ -59,10 +59,17 @@ body
 /* GENERAL REUSABLE COMPONENTS */
 /********************************/
 
+.container
+     max-width 120rem
+     padding 0 3.2rem
+     margin 0 auto
+
 .grid 
     display grid
     column-gap 6.4rem
     row-gap 9.6rem
+    &:not(:last-child)
+        margin-bottom 9.6rem
 
 .grid__2-cols
     grid-template-columns: repeat(2, 1fr)
@@ -70,13 +77,11 @@ body
 .grid__3-cols
     grid-template-columns: repeat(3, 1fr)
 
+.grid__4-cols
+    grid-template-columns repeat(4, 1fr)
+
 .grid__center-v
     align-items center
-
-.container
-     max-width 120rem
-     padding 0 3.2rem
-     margin 0 auto
 
 .heading-primary, .heading-secondary, .heading-tertiary
     color #333

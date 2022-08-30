@@ -321,4 +321,92 @@ $LIGHTEST_GREY_ON_TINT_COLOR = #6f6f6f
 
         &:hover
             transform scale(1.1)
-        
+
+/********************************/
+/* PRICING SECTION*/
+/********************************/
+
+.section-pricing
+    padding 9.6rem 0
+
+.pricing-plan
+    border-radius 11px
+    width 75%
+    // display flex
+    // flex-direction column
+    // justify-content space-between
+
+.pricing-plan__starter
+    border 2px solid $TINT_COLOR
+    padding 4.6rem
+    justify-self end
+
+.pricing-plan__complete
+    background-color $TINT_COLOR
+    padding 4.8rem
+    position relative
+    overflow hidden
+
+    &::after
+        content "Best Value"
+        position absolute
+        top 6%
+        right -18%
+        font-size 1.4rem
+        font-weight 700
+        text-transform uppercase
+        color #333
+        background-color #ffd43b
+        padding 0.8rem 8rem
+        transform rotate(45deg)
+
+.plan-header
+    text-align center
+    margin-bottom 4.8rem
+
+.plan-name
+    color $SHADES_COLOR
+    text-transform uppercase
+    font-weight 600
+    font-size 2rem
+    letter-spacing 0.75px
+    margin-bottom 3.2rem
+
+.plan-price
+    font-size 6.2rem
+    font-weight 600
+    color #333
+    margin-bottom 1.6rem
+
+    span
+        font-size 3rem
+        font-weight 500
+        margin-right 0.8rem
+
+.plan-text
+    font-size 1.6rem
+    line-height 1.8
+    color #6f6f6f
+
+.plan-sign-up
+    margin-top 4.8rem
+    text-align center
+
+.feature-icon
+    color $PRIMARY_COLOR
+    width 3.2rem
+    height 3.2rem
+    background-color $TINT_COLOR
+    padding 1.6rem
+    border-radius 50%
+    margin-bottom 3.2rem
+
+.feature-title 
+    font-size 2.4rem
+    color #333
+    font-weight 700
+    margin-bottom 1.6rem
+
+.feature-text
+    font-size 1.8rem
+    line-height 1.8
