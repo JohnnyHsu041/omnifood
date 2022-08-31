@@ -1,5 +1,7 @@
 $PRIMARY_COLOR = #e67e22
 $SHADES_COLOR = #cf711f
+$LINEAR_GRADIENT_COLOR =  #eb984e
+$CTA_TEXT_COLOR = #45260a
 $TINT_COLOR = #fdf2e9
 $TAG_VEGETARIAN_COLOR = #51cf66
 $TAG_VEGAN_COLOR = #94d82d
@@ -392,6 +394,12 @@ $LIGHTEST_GREY_ON_TINT_COLOR = #6f6f6f
     margin-top 4.8rem
     text-align center
 
+.plan-detail
+    text-align center
+    font-size 1.6rem
+    line-height 1.6
+    
+
 .feature-icon
     color $PRIMARY_COLOR
     width 3.2rem
@@ -410,3 +418,37 @@ $LIGHTEST_GREY_ON_TINT_COLOR = #6f6f6f
 .feature-text
     font-size 1.8rem
     line-height 1.8
+
+/********************************/
+/* CTA SECTION*/
+/********************************/
+
+.section-cta
+    padding 9.6rem 0
+
+.cta
+    display grid
+    grid-template-columns 2fr 1fr
+    box-shadow 0 2.4rem 4.8rem rgba(0,0,0,0.15)
+    border-radius 11px
+    background-image linear-gradient(to right bottom, $LINEAR_GRADIENT_COLOR, $PRIMARY_COLOR)
+    overflow hidden
+
+    // temp
+    height 50rem
+
+.cta-text-box
+    color $CTA_TEXT_COLOR
+    padding 4.8rem 6.4rem 6.4rem 6.4rem
+
+    .heading-secondary
+        margin-bottom 3.2rem
+
+.cta-text
+    font-size 1.8rem
+    line-height 1.8
+
+.cta-image-box
+    background-image linear-gradient(to right bottom,   rgba(235, 151, 78, 0.35),rgba(230, 125, 34, 0.35)), url('../img/eating.jpg')
+    background-size cover
+    background-position center

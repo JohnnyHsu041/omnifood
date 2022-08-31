@@ -5,13 +5,18 @@
 Primary: #e67e22
 Tints: #fdf2e9
 Shades: #cf711f
+cta-text: #45260a
+linear-gradient:  #eb984e
 #fae5d3
 
 ---- GREY
 ligntest grey allowed on #fdf2e9: #6f6f6f
 
+---- SHADOW
+0 2.4rem 4.8rem rgba(0,0,0,0.075)
+
 ---- FONT WEIGHT
-Default: 400
+Default: 400 
 Medium: 500
 Semi-bold: 600
 Bold: 799
