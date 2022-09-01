@@ -113,6 +113,7 @@ body {
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
 }
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -122,6 +123,9 @@ body {
   font-size: 2rem;
   font-weight: 600;
   transition: all 0.3s;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
 }
 .btn__full:link,
 .btn__full:visited {
@@ -143,6 +147,12 @@ body {
   background-color: #fdf2e9;
   color: #555;
   box-shadow: inset 0 0 0 3px #fff;
+}
+.btn__form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
 }
 .link:link,
 .link:visited {

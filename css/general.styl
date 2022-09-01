@@ -45,6 +45,7 @@ Paragraph default: 1.06
 $PRIMARY_COLOR = #e67e22
 $SHADES_COLOR = #cf711f
 $TINTS_COLORS = #fdf2e9
+$CTX_TEXT_COLOR = #45260a
 
 *
     margin 0
@@ -118,7 +119,7 @@ body
     margin-bottom 1.6rem
     letter-spacing 0.75px
 
-.btn:link, .btn:visited
+.btn, .btn:link, .btn:visited
     display inline-block
     padding 1.6rem 3.2rem
     text-decoration none
@@ -126,6 +127,11 @@ body
     font-size 2rem
     font-weight 600
     transition all 0.3s
+
+    // Only neccessary for .btn
+    font-family inherit
+    cursor pointer
+    border none
 
 .btn__full
     &:link, &:visited
@@ -145,6 +151,12 @@ body
         background-color $TINTS_COLORS
         color #555
         box-shadow inset 0 0 0 3px #fff
+
+.btn__form
+    background-color $CTX_TEXT_COLOR
+    color $TINTS_COLORS
+    align-self end
+    padding 1.2rem
 
 .link
     &:link, &:visited
