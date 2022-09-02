@@ -383,7 +383,7 @@
 /* CTA SECTION*/
 /********************************/
 .section-cta {
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 12.8rem;
 }
 .cta {
   display: grid;
@@ -447,7 +447,11 @@
 /* PRICING SECTION*/
 /********************************/
 .footer {
-  padding: 9.6rem 0;
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+.grid__footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 .logo-col {
   display: flex;
@@ -479,6 +483,7 @@
 .social-icon {
   height: 2.4rem;
   width: 2.4rem;
+  color: #767676;
 }
 .footer-heading {
   font-size: 1.8rem;
